@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .container{
+      width: 400px;
+      height: 100vh;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 5px 5px 8px rgb(194, 190, 190),-1px -1px 4px rgb(235, 232, 232);
+    
+  }
+  .upper-data{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+
+  }
+  .upper-data img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+  }
+  .weather-data{
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.13);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  .location{
+      color: white;
+      text-align: center;
+      font-size: 1.2em;
+  }
+  .temperature{
+      color: white;
+      text-align: center;
+      font-size: 4em;
+      font-weight: 900;
+
+  }
+  .more-info-label{
+      color: rgb(53, 53, 187);
+      text-transform: capitalize;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: absolute;
+      margin-top: 20%;
+  }
+  .more-info-container{
+      flex: 1;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      margin-top: 1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top:30%;
+
+  }
+  .more-info-block{
+      width: 45%;
+      margin-left: 3.5%;
+      height: 15vh;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 2px 2px 5px rgb(235, 229, 229),-1px -1px 4px rgb(238, 234, 234);
+
+  }
+  .info-block-label{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .info-block-label img{
+      width: 3em;
+
+  }
+  .info-block-label span{
+      color: rgb(72, 72, 209);
+      font-size: 0.9em;
+      font-weight: 500;
+      text-transform: capitalize;
+  }
+  .info-block-value{
+      width:50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: rgb(93, 93, 148)  }
+      .lower-data{
+           position: relative;
+           overflow: hidden;
+           width: 100%;
+           height: 50%;
+           border-bottom-left-radius: 20px;
+           border-bottom-right-radius: 20px;
+           padding: 1em;
+           display: flex;
+           flex-direction: column;
+      }
+@media(max-width:600px){
+    body,html{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+   
+    .upper-data{
+        top: 0%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        width: 95%;
+        
+    }
+    .upper-data img{
+        width: 100%;
+        height: 100%;
+    }
+    .container{
+        margin-top: -40%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: none;
+        height: 100vh;
+        
+    }
+    .lower-data{
+        margin-left: -8px;
+        margin-top: 10%;
+    }
+    .more-info-label{
+        margin-left: 7%;
+    }
+    .weather-data{
+        margin-top: 8%;
+    }
+    .more-info-block{
+        width: 40%;
+        margin-left: 7.5%;
+    }
+
+
+} 
